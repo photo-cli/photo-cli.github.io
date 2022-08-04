@@ -33,9 +33,9 @@ photo-cli copy --process-type SubFoldersPreserveFolderHierarchy --naming-style N
 │   ├── IMG_0747.JPG
 │   └── IMG_2371.jpg
 └── Spain Journey
-    ├── DSC_1807.jpg
-    ├── DSC_1808.jpg
-    └── IMG_5397.jpg
+      ├── DSC_1807.jpg
+      ├── DSC_1808.jpg
+      └── IMG_5397.jpg
 
 2 directories, 17 files
 </pre>
@@ -60,9 +60,9 @@ photo-cli copy --process-type SubFoldersPreserveFolderHierarchy --naming-style N
 │   └── 12.jpg
 ├── photo-cli-report.csv
 └── Spain Journey
-    ├── 1.jpg
-    ├── 2.jpg
-    └── 3.jpg
+      ├── 1.jpg
+      ├── 2.jpg
+      └── 3.jpg
 
 2 directories, 18 files
 </pre>

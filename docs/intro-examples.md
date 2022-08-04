@@ -45,9 +45,9 @@ There is three main feature that can be explain better with examples.
 │   ├── IMG_0747.JPG
 │   └── IMG_2371.jpg
 └── Spain Journey
-    ├── DSC_1807.jpg
-    ├── DSC_1808.jpg
-    └── IMG_5397.jpg
+      ├── DSC_1807.jpg
+      ├── DSC_1808.jpg
+      └── IMG_5397.jpg
 
 2 directories, 17 files
 </pre>
@@ -77,8 +77,8 @@ There is three main feature that can be explain better with examples.
 │       └── IMG_2371.jpg
 ├── photo-cli-report.csv
 └── Spain Journey
-    └── no-address-and-no-photo-taken-date
-        └── IMG_5397.jpg
+      └── no-address-and-no-photo-taken-date
+          └── IMG_5397.jpg
 
 6 directories, 18 files
 </pre>

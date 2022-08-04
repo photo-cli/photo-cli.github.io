@@ -33,9 +33,9 @@ photo-cli copy --process-type FlattenAllSubFolders --group-by YearMonthDay --nam
 │   ├── IMG_0747.JPG
 │   └── IMG_2371.jpg
 └── Spain Journey
-    ├── DSC_1807.jpg
-    ├── DSC_1808.jpg
-    └── IMG_5397.jpg
+      ├── DSC_1807.jpg
+      ├── DSC_1808.jpg
+      └── IMG_5397.jpg
 
 2 directories, 17 files
 </pre>
