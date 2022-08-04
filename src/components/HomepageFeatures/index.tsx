@@ -16,13 +16,13 @@ const FeatureList: FeatureItem[] = [
         title: 'Organize by Shoot / Taken Date',
         imageLight: '/img/time-light.svg',
         imageDark: '/img/time-dark.svg',
-        description: 'Each photograph\'s taken date is a stored within the file in today\'s cameras. This tool creates a new organized folder hierarchy by using this date & time to use in photograph file name and/or folder name.',
+        description: 'Each photograph\'s taken date is stored within the file in today\'s cameras. This tool creates a newly organized folder hierarchy by using this date & time to use in a photograph file name and/or folder name.',
     },
     {
         title: 'Organize by Country, Town, Neighbourhood, Street etc.',
         imageLight: '/img/location-light.svg',
         imageDark: '/img/location-dark.svg',
-        description: 'Each photograph\'s coordinate is a stored within the file in today\'s cameras. By the help of third-party reverse geocode provider (has free & paid options) his tool gets every coordinate\'s address and uses them in file name and/or folder name.',
+        description: 'Each photograph\'s coordinate is stored within the file in today\'s cameras. With the help of third-party reverse geocode provider, (this tool supports providers who have free & paid options) this tool gets every coordinate\'s address and uses them in a file name and/or folder name.',
     },
     {
         title: 'Not Sticking to Any Application or Third Party Vendor',
