@@ -42,6 +42,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: 'G-P3Z0ZNT1DK',
+          anonymizeIP: true,
+        }
       }),
     ],
   ],
