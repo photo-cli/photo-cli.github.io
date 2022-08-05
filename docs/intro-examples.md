@@ -88,7 +88,7 @@ There is three main feature that can be explain better with examples.
 
 #### What Happened? / How It Is Processed?
 
-There is lots of [transformation options](/docs/usages/intro) and [customization settings](/docs/settings#listing-all-settings), this is just a one of them. This transformation is done by running only the following single command;
+There are lots of [transformation options](/docs/usages/intro) and [customization settings](/docs/settings#listing-all-settings), this is just one of them. This transformation is done by running only the following single command;
 
 Command with explicit argument names & values
 ```
@@ -120,11 +120,11 @@ Writing csv report: finished.
 
 1. Gather all photo paths in the source folder within subfolders.
 2. Extract EXIF data of each photograph's taken date and coordinate.
-3. As [file name strategy](/docs/command-line-arguments#naming-style---s---naming-style-) is selected as `DateTimeWithSecondsAddress` and it contains address, by using [third-party reverse geocode provider](/docs/address-building-reverse-geocoding/intro) we are building address with `OpenStreetMap` by using [given administrative levels](/docs/address-building-reverse-geocoding/building-your-own-address-with-selected-properties) as `city town suburb` for each photograph.
-4. As [folder process type](/docs/command-line-arguments#folder-process-type---f---process-type-) is selected as `SubFoldersPreserveFolderHierarchy` folder and file hierarchy at the new output folder will be same.
-5. As [folder append type](/docs/command-line-arguments#folder-append-type---a---folder-append-) is selected as `DayRange` and [folder append location](/docs/command-line-arguments#folder-append-location-type---p---folder-append-location-) is `Prefix`, folder names on output folder will be created with same name prefixed with a earliest and latest photograph taken date. For example: `2005.12.14-2008.10.22-Italy album` (original folder name is `Italy album`)
-6. As [file name strategy](/docs/command-line-arguments#naming-style---s---naming-style-) is selected as `DateTimeWithSecondsAddress` each photograph file name would be copied as photo taken date unified with the address which is built from third party reverse geocode provider by photograph's coordinate. For example: `2012.06.22_19.52.31-United Kingdom-Ascot-Sunninghill and Ascot.jpg` (original file name is `GOPR6742.jpg`)
-7. As [no photograph taken date action](/docs/command-line-arguments#no-photograph-taken-date-action-for-copy-command----t---no-taken-date-) is selected as `InSubFolder` and [no coordinate action](/docs/command-line-arguments#no-coordinate-action-for-copy-command----c---no-coordinate-) is selected as `InSubFolder`, photographs with no related EXIF data copied into a sub folder by obeying original folder hierarchy. For example: `/Italy album/no-address/IMG_2371.jpg` and `/Spain Journey/no-address-and-no-photo-taken-date/IMG_5397.jpg`
+3. As [the file name strategy](/docs/command-line-arguments#naming-style---s---naming-style-) is selected as `DateTimeWithSecondsAddress` and it contains the address, by using [third-party reverse geocode provider](/docs/address-building-reverse-geocoding/intro) we are building the address with `OpenStreetMap` by using [given administrative levels](/docs/address-building-reverse-geocoding/building-your-own-address-with-selected-properties) as `city town suburb` for each photograph.
+4. As [the folder process type](/docs/command-line-arguments#folder-process-type---f---process-type-) is selected as `SubFoldersPreserveFolderHierarchy` folder and file hierarchy at the new output folder will be the same.
+5. As [the folder append type](/docs/command-line-arguments#folder-append-type---a---folder-append-) is selected as `DayRange` and [folder append location](/docs/command-line-arguments#folder-append-location-type---p---folder-append-location-) is `Prefix`, folder names on output folder will be created with the same name prefixed with the earliest and latest photograph taken date. For example: `2005.12.14-2008.10.22-Italy album` (original folder name is `Italy album`)
+6. As [the file name strategy](/docs/command-line-arguments#naming-style---s---naming-style-) is selected as `DateTimeWithSecondsAddress` each photograph file name would be copied as a photo taken date unified with the address which is built from the third party reverse geocode provider by the photograph's coordinate. For example: `2012.06.22_19.52.31-United Kingdom-Ascot-Sunninghill and Ascot.jpg` (original file name is `GOPR6742.jpg`)
+7. As [no photograph taken date action](/docs/command-line-arguments#no-photograph-taken-date-action-for-copy-command----t---no-taken-date-) is selected as `InSubFolder` and [no coordinate action](/docs/command-line-arguments#no-coordinate-action-for-copy-command----c---no-coordinate-) is selected as `InSubFolder`, photographs with no related EXIF data are copied into a sub folder by obeying the original folder hierarchy. For example: `/Italy album/no-address/IMG_2371.jpg` and `/Spain Journey/no-address-and-no-photo-taken-date/IMG_5397.jpg`
 8. To verify and see all information in one place, `photo-cli-report.csv` report will be created on the output file. Can be examined in [Markdown table](#contents-of-photo-cli-reportcsv-file-in-markdown-table-report-of-copy-command) or [CSV file](#contents-of-photo-cli-reportcsv-file-in-raw-text-format-report-of-copy-command).
 
 ##### Contents of `photo-cli-report.csv` File in Markdown Table (report of `copy` command)
@@ -273,7 +273,7 @@ Writing csv report: finished.
 
 ### 3. Navigate Your Photo Locations on Google Maps & Earth
 
-If you want to discover your photographs interactively on world, you may do it by importing your CSV output (whether [photo-cli copy](/docs/commands-verbs/copy) or [photo-cli info](/docs/commands-verbs/info) command) to [Google Maps](https://maps.google.com) and [Google Earth](https://earth.google.com), you can interactively navigate through your photographs.
+If you want to discover your photographs interactively in the world, you may do it by importing your CSV output (whether [photo-cli copy](/docs/commands-verbs/copy) or [photo-cli info](/docs/commands-verbs/info) command) to [Google Maps](https://maps.google.com) and [Google Earth](https://earth.google.com), you can interactively navigate through your photographs.
 
 #### Google Maps
 
