@@ -41,7 +41,6 @@ DryRunCsvReportFileName=photo-cli-dry-run.csv
 ConnectionLimit=4
 BigDataCloudApiKey=
 GoogleMapsApiKey=
-MapQuestApiKey=
 LocationIqApiKey=
 ```
 

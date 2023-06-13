@@ -123,7 +123,6 @@ You may replace `{{ApiKey}}` in the address with your API key or you can use the
 | [BigDataCloud](https://www.bigdatacloud.com/geocoding-apis/reverse-geocode-to-city-api/)         | [big-data-cloud.http](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/http/big-data-cloud.http)   |
 | [Open Street Map Foundation - Nominatim](https://nominatim.org/release-docs/latest/api/Reverse/) | [open-street-map.http](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/http/open-street-map.http) |
 | [GoogleMaps](https://developers.google.com/maps/documentation/geocoding/overview/)               | [google-maps.http](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/http/google-maps.http)         |
-| [MapQuest](https://developer.mapquest.com/documentation/open/nominatim-search/reverse/)          | [map-quest.http](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/http/map-quest.http)             |
 | [LocationIq](https://locationiq.com/sandbox/geocoding/reverse/)                                  | [location-iq.http](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/http/location-iq.http)         |
 
 ##### Using Postman
@@ -137,7 +136,6 @@ You should prepare the following environment variables on Postman.
 | [BigDataCloud](https://www.bigdatacloud.com/geocoding-apis/reverse-geocode-to-city-api/)         | `BigDataCloud-ApiKey`        |
 | [Open Street Map Foundation - Nominatim](https://nominatim.org/release-docs/latest/api/Reverse/) | -                            |
 | [GoogleMaps](https://developers.google.com/maps/documentation/geocoding/overview/)               | `GoogleMaps-ApiKey`          |
-| [MapQuest](https://developer.mapquest.com/documentation/open/nominatim-search/reverse/)          | `MapQuest-ApiKey`            |
 | [LocationIq](https://locationiq.com/sandbox/geocoding/reverse/)                                  | `LocationIq-ApiKey`          |
 
 ##### Sample Responses
@@ -149,5 +147,4 @@ Sample responses in JSON format are listed below from each reverse geocode for t
 | [BigDataCloud](https://www.bigdatacloud.com/geocoding-apis/reverse-geocode-to-city-api/)         | [big-data-cloud.json](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/sample-responses/big-data-cloud.json)   |
 | [Open Street Map Foundation - Nominatim](https://nominatim.org/release-docs/latest/api/Reverse/) | [open-street-map.json](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/sample-responses/open-street-map.json) |
 | [GoogleMaps](https://developers.google.com/maps/documentation/geocoding/overview/)               | [google-maps.json](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/sample-responses/google-maps.json)         |
-| [MapQuest](https://developer.mapquest.com/documentation/open/nominatim-search/reverse/)          | [map-quest.json](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/sample-responses/map-quest.json)             |
 | [LocationIq](https://locationiq.com/sandbox/geocoding/reverse/)                                  | [location-iq.json](https://github.com/photo-cli/photo-cli/blob/main/docs/reverse-geocode/sample-responses//location-iq.json)        |

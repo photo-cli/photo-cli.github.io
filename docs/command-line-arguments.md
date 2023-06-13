@@ -86,6 +86,10 @@ Must be used on `copy` verb. Number naming strategy when using [Naming Style](#n
 
 Optional use for `copy` verb. Simulate the same process without writing to output folder. No extra parameter needed.
 
+### Verify ( -v, --verify)
+
+Optional use for `copy` verb. Verify that all photo files copied successfully by comparing file hashes. (no extra parameter needed)
+
 ### Reverse Geocode Provider ( -e, --reverse-geocode )
 
 Third-party provider to resolve photo taken address by photo's coordinates.
@@ -95,7 +99,6 @@ Third-party provider to resolve photo taken address by photo's coordinates.
 | BigDataCloud            | 1     |
 | OpenStreetMapFoundation | 2     |
 | GoogleMaps              | 3     |
-| MapQuest                | 4     |
 | LocationIq              | 5     |
 
 ### Big Data Cloud API Key ( -b, --bigdatacloud-key )
@@ -106,21 +109,17 @@ Sets [Big Data Cloud reverse geocode](https://www.bigdatacloud.com/geocoding-api
 
 Sets [Google Maps reverse geocode](https://developers.google.com/maps/documentation/geocoding/overview/) API key. Alternatively, you may use the environment variable `PHOTO_CLI_GOOGLE_MAPS_API_KEY`.
 
-### Map Quest API Key ( -u, --mapquest-key )
-
-Sets [Map Quest reverse geocode](https://developer.mapquest.com/documentation/open/nominatim-search/reverse/) API key. Alternatively, you may use the environment variable `PHOTO_CLI_MAPQUEST_API_KEY`.
-
 ### Location Iq API Key ( -q, --locationiq-key )
 
 Sets [Location Iq reverse geocode](https://locationiq.com/sandbox/geocoding/reverse/) API key. Alternatively, you may use the environment variable `PHOTO_CLI_LOCATIONIQ_API_KEY`.
 
-### BigDataCloud Admin Levels ( -v, --bigdatacloud-levels )
+### BigDataCloud Admin Levels ( -u, --bigdatacloud-levels )
 
 Must be used when `BigDataCloud` is selected as reverse geocode provider. Big Data Cloud admin levels are separated with space. ( To see which level correspond to which address level, you may use `photo-cli address` to see the full response returned from BigDataCloud. )
 
 ### OpenStreetMapProperties ( -r, --openstreetmap-properties )
 
-Must be used when any of `OpenStreetMapFoundation`, `MapQuest`, `LocationIq` is selected as reverse geocode provider. OpenStreetMap properties separated with space. ( To see which level correspond to which address level, you may use `photo-cli address` to see the full response returned from OpenStreetMap provider. )
+Must be used when any of `OpenStreetMapFoundation`, `LocationIq` is selected as reverse geocode provider. OpenStreetMap properties separated with space. ( To see which level correspond to which address level, you may use `photo-cli address` to see the full response returned from OpenStreetMap provider. )
 
 ### Google Maps Address Types ( -m, --googlemaps-types )
 
@@ -128,7 +127,7 @@ Must be used when `GoogleMaps` selected as reverse geocode provider. Google Maps
 
 ### Has Paid License ( -h, --has-paid-license )
 
-Bypass the free rate limit if you have paid license. (For `MapQuest` and `LocationIq` reverse geocode providers)
+Bypass the free rate limit if you have paid license. (For `LocationIq` reverse geocode providers)
 
 ### No Photograph Taken Date Action [for `copy` command ] ( -t, --no-taken-date )
 

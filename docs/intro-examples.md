@@ -92,12 +92,12 @@ There are lots of [transformation options](/docs/usages/intro) and [customizatio
 
 Command with explicit argument names & values
 ```
-photo-cli copy --process-type SubFoldersPreserveFolderHierarchy --naming-style DateTimeWithSecondsAddress --number-style PaddingZeroCharacter --folder-append DayRange --folder-append-location Prefix --reverse-geocode OpenStreetMapFoundation --openstreetmap-properties country city town suburb --output photo-cli-test --no-coordinate InSubFolder --no-taken-date InSubFolder
+photo-cli copy --process-type SubFoldersPreserveFolderHierarchy --naming-style DateTimeWithSecondsAddress --number-style PaddingZeroCharacter --folder-append DayRange --folder-append-location Prefix --reverse-geocode OpenStreetMapFoundation --openstreetmap-properties country city town suburb --output photo-cli-test --no-coordinate InSubFolder --no-taken-date InSubFolder --verify
 ```
 
 Same command with shorter alias of all argument names & values
 ```
-photo-cli copy -f 2 -s 8 -n 2 -a 4 -p 1 -e 2 -r country city town suburb -o photo-cli-test -c 3 -t 3
+photo-cli copy -f 2 -s 8 -n 2 -a 4 -p 1 -e 2 -r country city town suburb -o photo-cli-test -c 3 -t 3 -v
 ```
 
 Console/terminal output (as progress may take time, for each operation completion status shown with progress)
@@ -108,12 +108,14 @@ This OpenStreetMapFoundation provider is using rate limit of 1 seconds between e
 Reverse Geocoding: finished.
 Directory grouping: finished.
 Processing target folder: finished.
+Verified all photo files copied successfully by comparing file hashes from original photo files.
+All files SHA1 hashes written into file: sha1.lst. You may verify yourself with `sha1sum --check sha1.lst` tool in Linux/macOS.
 Writing csv report: finished.
-- 18 photos copied.
+- 17 photos copied.
 - 4 directories created.
 - 15 photos has taken date and coordinate.
 - 1 photos has taken date but no coordinate.
-- 2 photos has no taken date and coordinate.
+- 1 photos has no taken date and coordinate.
 ```
 
 #### Step By Step `photo-cli copy` Process
@@ -125,7 +127,8 @@ Writing csv report: finished.
 5. As [the folder append type](/docs/command-line-arguments#folder-append-type---a---folder-append-) is selected as `DayRange` and [folder append location](/docs/command-line-arguments#folder-append-location-type---p---folder-append-location-) is `Prefix`, folder names on output folder will be created with the same name prefixed with the earliest and latest photograph taken date. For example: `2005.12.14-2008.10.22-Italy album` (original folder name is `Italy album`)
 6. As [the file name strategy](/docs/command-line-arguments#naming-style---s---naming-style-) is selected as `DateTimeWithSecondsAddress` each photograph file name would be copied as a photo taken date unified with the address which is built from the third party reverse geocode provider by the photograph's coordinate. For example: `2012.06.22_19.52.31-United Kingdom-Ascot-Sunninghill and Ascot.jpg` (original file name is `GOPR6742.jpg`)
 7. As [no photograph taken date action](/docs/command-line-arguments#no-photograph-taken-date-action-for-copy-command----t---no-taken-date-) is selected as `InSubFolder` and [no coordinate action](/docs/command-line-arguments#no-coordinate-action-for-copy-command----c---no-coordinate-) is selected as `InSubFolder`, photographs with no related EXIF data are copied into a sub folder by obeying the original folder hierarchy. For example: `/Italy album/no-address/IMG_2371.jpg` and `/Spain Journey/no-address-and-no-photo-taken-date/IMG_5397.jpg`
-8. To verify and see all information in one place, `photo-cli-report.csv` report will be created on the output file. Can be examined in [Markdown table](#contents-of-photo-cli-reportcsv-file-in-markdown-table-report-of-copy-command) or [CSV file](#contents-of-photo-cli-reportcsv-file-in-raw-text-format-report-of-copy-command).
+8. As [verify](/docs/command-line-arguments#verify---v---verify) is added, it is verifying that all photo files copied successfully by comparing file hashes. By adding this, it guarantees that there won't be any corrupted photos that is caused by disk operation failures.
+9. To verify and see all information in one place, `photo-cli-report.csv` report will be created on the output file. Can be examined in [Markdown table](#contents-of-photo-cli-reportcsv-file-in-markdown-table-report-of-copy-command) or [CSV file](#contents-of-photo-cli-reportcsv-file-in-raw-text-format-report-of-copy-command).
 
 ##### Contents of `photo-cli-report.csv` File in Markdown Table (report of `copy` command)
 

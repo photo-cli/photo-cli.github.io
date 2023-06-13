@@ -11,7 +11,6 @@ Every reverse geocode provider has its address building parameters. With `addres
 | [BigDataCloud](https://www.bigdatacloud.com/geocoding-apis/reverse-geocode-to-city-api/)         | [BigDataCloud Properties](#big-data-cloud-parameters) |
 | [Open Street Map Foundation - Nominatim](https://nominatim.org/release-docs/latest/api/Reverse/) | [OpenStreet Properties](#open-street-map-parameters)  |
 | [GoogleMaps](https://developers.google.com/maps/documentation/geocoding/overview/)               | [GoogleMaps Properties](#google-maps-properties)      |
-| [MapQuest](https://developer.mapquest.com/documentation/open/nominatim-search/reverse/)          | [OpenStreet Properties](#open-street-map-parameters)  |
 | [LocationIq](https://locationiq.com/sandbox/geocoding/reverse/)                                  | [OpenStreet Properties](#open-street-map-parameters)  |
 
 #### Big Data Cloud Parameters

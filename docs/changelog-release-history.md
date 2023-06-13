@@ -4,7 +4,18 @@ sidebar_position: 10
 
 # Changelog - Release History
 
-### 0.0.0 (2022-08-01)
+## 0.1.0 (2023-06-13)
+
+- HEIC & JPEG file support ( https://github.com/RecepCil )
+- Verify file hash
+- Invalid photo format prevention, error handling
+
+## 0.0.1 (2023-02-23)
+
+- Getting address without giving reverse geocoding specific properties
+- Reverse geocode provider MapQuest removed, service deprecated
+
+## 0.0.0 (2022-08-01)
 
 - First public release.
 `copy`, `info`, `address` and `settings` verbs developed
@@ -19,7 +30,3 @@ sidebar_position: 10
 - GroupByFolderType: YearMonthDay, YearMonth, Year, AddressFlat, AddressHierarchy
 
 - ReverseGeocodeProvider: BigDataCloud, OpenStreetMapFoundation, GoogleMaps, MapQuest, LocationIq
-
-### 0.0.0-preview(0-5) (2022-07-31)
-
-Testing releases.
