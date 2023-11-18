@@ -13,7 +13,9 @@ photo-cli copy --process-type FlattenAllSubFolders --group-by YearMonthDay --nam
 <table>
 <tr>
     <th>Original Folder Hierarchy</th>
-    <th>After <b><i>photo-cli</i></b></th></tr><tr>
+    <th>After <b><i>photo-cli</i></b></th>
+</tr>
+<tr>
 <td>
 <pre>
 
