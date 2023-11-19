@@ -6,11 +6,11 @@ sidebar_position: 7
 
 ### Input Path ( -i, --input )
 
-Optional use for `copy`, `info` verb. Must be used on `address` verb. File system path to read & copy photos from. If not given, the current executing folder will be used. There will be no modification on input path.
+Optional use for `copy`, `archive`, `info` verb. Must be used on `address` verb. File system path to read & copy photos from. If not given, the current executing folder will be used. There will be no modification on input path.
 
 ### Output Path ( -o, --output )
 
-Must be used on `copy`, `info` verbs. File system path to write output. For `copy`, new folder hierarchy created on that location with new file names. It will create folder if not exists. For `info`, report csv file path to write.
+Must be used on `copy`, `archive`, `info` verbs. File system path to write output. For `copy`, new folder hierarchy created on that location with new file names. It will create folder if not exists. For `info`, report csv file path to write.
 
 ### Folder Process Type ( -f, --process-type )
 
@@ -84,7 +84,7 @@ Must be used on `copy` verb. Number naming strategy when using [Naming Style](#n
 
 ### Is Dry Run ( -d, --dry-run )
 
-Optional use for `copy` verb. Simulate the same process without writing to output folder. No extra parameter needed.
+Optional use for `copy`, `archive` verb. Simulate the same process without writing to output folder. No extra parameter needed.
 
 ### Verify ( -v, --verify)
 
@@ -92,7 +92,7 @@ Optional use for `copy` verb. Verify that all photo files copied successfully by
 
 ### Reverse Geocode Provider ( -e, --reverse-geocode )
 
-Third-party provider to resolve photo taken address by photo's coordinates.
+Optional use for `copy`, `archive`, `info` verb. Must be used on `address` verb. Third-party provider to resolve photo taken address by photo's coordinates.
 
 | Option                  | Value |
 |-------------------------|-------|
@@ -169,6 +169,24 @@ Optional use for `info` verb. Action to do when a photograph with a no taken dat
 ### No Coordinate Action [for `info` command ] ( -c, --no-coordinate )
 
 Optional use for `info` verb. Action to do when a photo with a no coordinate.
+
+| Option           | Value |
+|------------------|-------|
+| Continue         | 0     |
+| PreventProcess   | 1     |
+
+### No Photograph Taken Date Action [for `archive` command ] ( -t, --no-taken-date )
+
+Optional use for `archive` verb. Action to do when a photograph with a no taken date. Default is `Continue`.
+
+| Option                           | Value       |
+|----------------------------------|-------------|
+| Continue (default)               | 0 (default) |
+| PreventProcess                   | 1           |
+
+### No Coordinate Action [for `archive` command ] ( -c, --no-coordinate )
+
+Optional use for `archive` verb. Action to do when a photo with a no coordinate.
 
 | Option           | Value |
 |------------------|-------|
