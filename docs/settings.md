@@ -39,6 +39,7 @@ NoAddressAndPhotoTakenDateFolderName=no-address-and-no-photo-taken-date
 CsvReportFileName=photo-cli-report.csv
 DryRunCsvReportFileName=photo-cli-dry-run.csv
 ConnectionLimit=4
+CoordinatePrecision=4
 BigDataCloudApiKey=
 GoogleMapsApiKey=
 LocationIqApiKey=
