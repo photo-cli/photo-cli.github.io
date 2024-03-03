@@ -21,27 +21,30 @@ photo-cli settings
 ```
 
 ```
-LogLevel=Error
-YearFormat=yyyy
-MonthFormat=MM
-DayFormat=dd
-DateFormatWithMonth=yyyy.MM
+AddressSeparator=-
+ArchivePhotoTakenDateHashSeparator=-
+BigDataCloudApiKey=
+ConnectionLimit=4
+CoordinatePrecision=4
+CsvReportFileName=photo-cli-report.csv
 DateFormatWithDay=yyyy.MM.dd
+DateFormatWithMonth=yyyy.MM
 DateTimeFormatWithMinutes=yyyy.MM.dd_HH.mm
 DateTimeFormatWithSeconds=yyyy.MM.dd_HH.mm.ss
-AddressSeparator=-
-FolderAppendSeparator=-
+DayFormat=dd
 DayRangeSeparator=-
-SameNameNumberSeparator=-
-NoPhotoTakenDateFolderName=no-photo-taken-date
-NoAddressFolderName=no-address
-NoAddressAndPhotoTakenDateFolderName=no-address-and-no-photo-taken-date
-CsvReportFileName=photo-cli-report.csv
 DryRunCsvReportFileName=photo-cli-dry-run.csv
-ConnectionLimit=4
-BigDataCloudApiKey=
+FolderAppendSeparator=-
 GoogleMapsApiKey=
 LocationIqApiKey=
+LogLevel=Warning
+MonthFormat=MM
+NoAddressAndPhotoTakenDateFolderName=no-address-and-no-photo-taken-date
+NoAddressFolderName=no-address
+NoPhotoTakenDateFolderName=no-photo-taken-date
+PhotoFormatInvalidFolderName=invalid-photo-format
+SameNameNumberSeparator=-
+YearFormat=yyyy
 ```
 
 ## Getting a Single Value

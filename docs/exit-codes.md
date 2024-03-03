@@ -16,6 +16,7 @@ Process exit codes listed below;
 | InfoOptionsValidationFailed                     | 12    |
 | CopyOptionsValidationFailed                     | 13    |
 | SettingsOptionsValidationFailed                 | 14    |
+| ArchiveOptionsValidationFailed                  | 15    |
 | InputFolderNotExists                            | 20    |
 | NoPhotoFoundOnDirectory                         | 21    |
 | OutputFolderIsNotEmpty                          | 22    |
