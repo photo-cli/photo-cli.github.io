@@ -4,6 +4,26 @@ sidebar_position: 130
 
 # Changelog - Release History
 
+# 0.3.1 - 0.3.3
+- Homebrew & standalone executable builds by release automation.
+
+# 0.3.0 (2024-07-27)
+
+- Companion file support
+- Resilience in reserve geocoding requests
+- Upgraded to .NET 8
+- Configurable supported photos
+
+# 0.2.1 (2024-03-06)
+
+- Fixing unable to set non-string setting values [@RecepCil](https://github.com/RecepCil)
+
+# 0.2.0 (2024-02-21)
+
+- Archive verb & small fixes & test improvements
+- Cache reverse geocode results by [@RecepCil](https://github.com/RecepCil)
+- Verifying address responses with regex
+
 ## 0.1.0 (2023-06-13)
 
 - HEIC & JPEG file support ( https://github.com/RecepCil )
