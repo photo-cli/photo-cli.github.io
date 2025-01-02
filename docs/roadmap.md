@@ -16,20 +16,17 @@ sidebar_position: 120
 | 0.1.0              | June 2023 - release after new features          |
 | 0.1.1              | July-October 2023 - possible fixes              |
 | 0.2.0              | January 2024 - new features                     |
-| N.0.0              | Later 2024 - new breaking changes               |
+| 0.3.0              | July 2024 - new features                        |
+| 0.N.0              | Later 2025 - possible features                  |
+| N.0.0              | Later 2025 - new breaking changes               |
 
 ## Issues Planned For Each Version
 
 Issues will be linked on [GitHub Project of this repository](https://github.com/photo-cli/photo-cli/projects).
 
+### Current
+
+- [v0.3.0](https://github.com/orgs/photo-cli/projects/2/)
+
 ### Future
-
-- [v0.2.0](https://github.com/photo-cli/photo-cli/projects/7)
-- [v1.0.0](https://github.com/photo-cli/photo-cli/projects/6)
-- [Future Plans](https://github.com/photo-cli/photo-cli/projects/2)
-
-### Old
-
-- [v0.0.0](https://github.com/photo-cli/photo-cli/projects/1)
-- [v0.0.1](https://github.com/photo-cli/photo-cli/projects/3)
-- [v0.1.0](https://github.com/photo-cli/photo-cli/projects/5)
+- [v1.0.0](https://github.com/orgs/photo-cli/projects/3/)
