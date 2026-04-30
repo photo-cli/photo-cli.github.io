@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'photo-cli',
-  tagline: 'Open source & free CLI tool that runs on macOS, Windows, Linux that extracts when and where (reverse geocode) your photographs are taken, copy into a new organized folder (not modifying source folder) with various folder & file naming strategies or export all data into CSV files.',
+  tagline: 'A photo organizer for your file system without sticking to any application or vendor. Extract when and where (reverse geocoding) your photos are taken, archive or copy into a new organized folder with various folder & file naming strategies with an album support to categorize, list & view easily with a metadata stored on local SQLite & CSV support.',
   url: 'https://photocli.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',

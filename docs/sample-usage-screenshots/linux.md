@@ -10,11 +10,7 @@ sidebar_position: 3
 
 ## File Manager
 
-![linux-file-manager](/img/screenshots/linux/file-manager.png)
-
-## Libre Office Calc
-
-![linux-calc](/img/screenshots/linux/calc.png)
+![linux-fileshjk    ](/img/screenshots/linux/files.png)
 
 ## Tree Command
 

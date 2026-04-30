@@ -12,10 +12,6 @@ sidebar_position: 1
 
 ![mac-os-finder](/img/screenshots/macos/finder.png)
 
-## Apple Numbers
-
-![mac-os-numbers](/img/screenshots/macos/numbers.png)
-
 ## Tree Command
 
 ![mac-os-tree-command](/img/screenshots/macos/tree-command.png)
